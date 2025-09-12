@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Buy groceries",
+        "completed": false
+    },
+    {
+        "title": "Finish Python assignment",
+        "completed": true
+    },
+    {
+        "title": "Call mom",
+        "completed": false
+    },
+    {
+        "title": "Read a chapter of book",
+        "completed": false
+    },
+    {
+        "title": "1",
+        "completed": false
+    }
+]
