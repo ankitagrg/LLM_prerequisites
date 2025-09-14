@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 CSV_FILE = "data/weather.csv"
 os.makedirs(os.path.dirname(CSV_FILE), exist_ok=True)
-# Load Data
+
 
 def load_weather_data():
     if not os.path.exists(CSV_FILE):
