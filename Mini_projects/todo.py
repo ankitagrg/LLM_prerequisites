@@ -1,6 +1,8 @@
 import json
 import os
 
+# File Path Setup
+
 TASK_FILE = "data/tasks.json"
 
 def load_tasks():
@@ -9,11 +11,11 @@ def load_tasks():
         with open(TASK_FILE, "r") as file:
             tasks = json.load(file)
     except FileNotFoundError:
-        print("⚠️  tasks.json not found. Creating a new file...")
+        print("tasks.json not found. Creating a new file...")
         tasks = []
         save_tasks(tasks)
     except json.JSONDecodeError:
-        print("⚠️  JSON decode error. Starting with empty tasks.")
+        print("JSON decode error. Starting with empty tasks.")
         tasks = []
     return tasks
 
@@ -38,9 +40,9 @@ def add_task(tasks):
     if title:
         tasks.append({"title": title, "completed": False})
         save_tasks(tasks)
-        print(f"✅ Task '{title}' added!")
+        print(f"Task '{title}' added!")
     else:
-        print("⚠️ Task title cannot be empty!")
+        print("Task title cannot be empty!")
 
 def remove_task(tasks):
     show_tasks(tasks)
@@ -49,11 +51,11 @@ def remove_task(tasks):
         if 1 <= idx <= len(tasks):
             removed = tasks.pop(idx - 1)
             save_tasks(tasks)
-            print(f"✅ Task '{removed['title']}' removed!")
+            print(f"Task '{removed['title']}' removed!")
         else:
-            print("⚠️ Invalid task number!")
+            print("Invalid task number!")
     except ValueError:
-        print("⚠️ Please enter a valid number!")
+        print("Please enter a valid number!")
 
 def mark_complete(tasks):
     show_tasks(tasks)
@@ -64,10 +66,11 @@ def mark_complete(tasks):
             save_tasks(tasks)
             print(f" Task '{tasks[idx - 1]['title']}' marked as complete!")
         else:
-            print("⚠️ Invalid task number!")
+            print("Invalid task number!")
     except ValueError:
-        print("⚠️ Please enter a valid number!")
+        print("Please enter a valid number!")
 
+# Main Function
 
 def main():
     tasks = load_tasks()
@@ -90,10 +93,10 @@ def main():
         elif choice == "4":
             mark_complete(tasks)
         elif choice == "5":
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
         else:
-            print("⚠️ Invalid choice! Please enter a number between 1 and 5.")
+            print("Invalid choice! Please enter a number between 1 and 5.")
 
 if __name__ == "__main__":
     main()
