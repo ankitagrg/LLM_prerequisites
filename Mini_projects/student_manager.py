@@ -3,9 +3,7 @@ import os
 
 CSV_FILE = "data/students.csv"
 
-# ----------------------
-# Student Class
-# ----------------------
+
 class Student:
     def __init__(self, name, age, grade):
         self.name = name
@@ -52,9 +50,6 @@ def save_students(students, filename=CSV_FILE):
     except Exception as e:
         print(f"Error saving CSV: {e}")
 
-# ----------------------
-# Utility Functions
-# ----------------------
 def show_students(students):
     if not students:
         print("No students found.")
@@ -68,9 +63,7 @@ def filter_top_students(students):
     top = [s for s in students if s.grade in ("A", "B")]
     return top
 
-# ----------------------
-# Main Program
-# ----------------------
+
 def main():
     students = load_students()
 
