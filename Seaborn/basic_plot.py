@@ -1,7 +1,6 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load built-in dataset
 tips = sns.load_dataset("tips")
 
 # Basic scatter plot with regression line
