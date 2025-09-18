@@ -23,7 +23,7 @@ This repository covers:
 
 ---
 
-## 🐍 Python Concepts Covered
+## Python Concepts Covered
 
 - **Functions & Modules**: Writing reusable functions, importing and using modules.
 - **Data Types**: Strings, lists, dictionaries, tuples, sets, and their operations.
