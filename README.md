@@ -86,3 +86,12 @@ This repository covers:
 
 ---
 
+# Machine Learning
+---
+# Linear Algebra Basics for Machine Learning
+
+
+This folder contains basic linear algebra operations implemented in Python using NumPy. These are foundational concepts commonly used in machine learning.
+
+
+
