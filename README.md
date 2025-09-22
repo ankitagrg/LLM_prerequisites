@@ -58,8 +58,6 @@ This repository covers:
 
 ---
 
-
-
 ## 🚀 Mini Projects
 
 ### 1. **Student Manager**
@@ -86,14 +84,13 @@ This repository covers:
 
 ---
 
-
 # 📘 ML_basics
 
-This repository provides a structured collection of **mathematical and statistical foundations for Machine Learning**.  
-It includes Python scripts that cover **Calculus, Linear Algebra, and Probability & Statistics**—the essential building blocks of ML algorithms.  
+**ML_basics** is a learning resource that focuses on the **mathematical and statistical foundations of Machine Learning**.  
+It includes Python scripts that cover **Calculus, Linear Algebra, and Probability & Statistics**—the essential building blocks of ML algorithms.
 
 ---
-
+ 
 ## 🚀 Topics Covered
 
 ###  Calculus
