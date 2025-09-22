@@ -86,11 +86,33 @@ This repository covers:
 
 ---
 
-# Machine Learning
-# Linear Algebra Basics for Machine Learning
 
+# 📘 ML_basics
 
-This folder contains basic linear algebra operations implemented in Python using NumPy. These are foundational concepts commonly used in machine learning.
+This repository provides a structured collection of **mathematical and statistical foundations for Machine Learning**.  
+It includes Python scripts that cover **Calculus, Linear Algebra, and Probability & Statistics**—the essential building blocks of ML algorithms.  
+
+---
+
+## 🚀 Topics Covered
+
+###  Calculus
+- Derivatives and their role in ML.
+- Gradient Descent basics for cost function minimization.
+
+###  Linear Algebra (Core Foundations)
+- Vectors and their operations.
+- Dot product and geometric interpretation.
+- Matrices and transformations.
+- Matrix multiplication and applications in ML.
+
+###  Probability & Statistics
+- Conditional probability and Bayes' theorem.
+- Discrete and continuous distributions.
+- Expectation, variance, and standard deviation.
+
+---
+
 
 
 
