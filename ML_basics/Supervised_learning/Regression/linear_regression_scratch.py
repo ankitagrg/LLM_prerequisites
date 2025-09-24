@@ -2,14 +2,13 @@ import numpy as np
 
 # Generate dummy data
 X = np.array([1, 2, 3, 4, 5])
-y = np.array([2, 4, 6, 8, 10])  # y = 2x
+y = np.array([2, 4, 6, 8, 10])  
 
 # Initialize weights
 m, b = 0, 0  
 learning_rate = 0.01
 epochs = 1000
 
-# Gradient Descent
 for _ in range(epochs):
     y_pred = m * X + b
     error = y - y_pred
