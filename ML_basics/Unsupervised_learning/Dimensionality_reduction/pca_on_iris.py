@@ -18,6 +18,7 @@ X_pca = pca.fit_transform(X)
 df = pd.DataFrame(X_pca, columns=["PC1", "PC2"])
 df["Target"] = y
 
+
 # Plot PCA-reduced data
 plt.figure(figsize=(8, 6))
 sns.scatterplot(x="PC1", y="PC2", hue="Target", palette="Set2", data=df)
